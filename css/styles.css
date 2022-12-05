@@ -1,4 +1,9 @@
+:root {
+  --size: 800px;
+}
+
 /*
+
 #first {
     color: white;
     font-size: 20px;
@@ -9,7 +14,7 @@
     background-color: black;
   }
  */
-
+/*
   p {
     color: lightblue;
   }
@@ -46,4 +51,49 @@ div {
 .alert-warning {
   background: #000000;
   color: yellow;
+}
+
+*/
+
+.board-cell:hover {
+  background: #ffbbaa;
+}
+
+.board-cell {
+  background: #bbbbff;
+  border: 2px solid #6666FF;
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+  /*  
+  color: rgba(255, 255, 255, 0.9); 
+  font: bold 60px Arial;
+  line-height: 110px;
+  text-align: center;
+  */
+  /*margin-bottom: 10px;
+  margin-right: 10px;
+  */
+  /*height: 10px;
+  width: 10px;*/
+}
+
+.board-row {
+  display: flex;
+  flex-grow: 1;
+  box-sizing: border-box;
+  /* background: #e9e9f0;
+  box-sizing: border-box;
+  height: 330px;
+  margin: 20px;
+  padding: 10px;
+  */
+  /*height: 10%;*/
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  width: var(--size);
+  height: var(--size);
 }
